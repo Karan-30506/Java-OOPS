@@ -1,0 +1,15 @@
+{
+	"Printf Snippet": {
+		"prefix": "printf",
+		"body": "System.out.printf($0);",
+		"description": "Formatted Output"
+	},
+	"Scanner Snippet": {
+		"prefix": "scanner",
+		"body": [
+			"Scanner sc = new Scanner(System.in);\n",
+			"$0",
+			"\nsc.close();"
+		]
+	}
+}

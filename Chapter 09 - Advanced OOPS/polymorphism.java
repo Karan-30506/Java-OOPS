@@ -1,3 +1,33 @@
+abstract class Shape {
+    abstract double area();
+}
+
+class Circle extends Shape {
+    double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    double area() {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+}
+
+class Square extends Shape {
+    double side;
+
+    Square(double side) {
+        this.side = side;
+    }
+
+    @Override
+    double area() {
+        return Math.pow(side, 2);
+    }
+}
+
 public class polymorphism {
     public static void main(String[] args) {
         // Polymorphism ==> Exists in different forms and shapes
